@@ -1,2 +1,5 @@
 # RepStudy1
-test
+
+Ihor Krykent
+
+17/11/2023
