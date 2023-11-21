@@ -6,3 +6,4 @@ town_description = '''Невелике місто в Дніпропетровс�
 
 print('Я живу у місті', town_name)
 print(town_description)
+
