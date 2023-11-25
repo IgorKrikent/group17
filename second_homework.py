@@ -5,12 +5,10 @@ user_name = input('Enter yon name >>> ').strip().title()
 user_age = input('How old are you (years)? >>> ')
 
 # data processing - age
-if not user_age.isdigit():
+while not user_age.isdigit():
 
-    while not user_age.isdigit():
-
-        user_age = input('Please use integer data without other symbols \n'
-                         '(including spaces), so, how old are you? >>> ')
+    user_age = input('Please use integer data without other symbols \n'
+                     '(including spaces), so, how old are you? >>> ')
 
 user_age = int(user_age)
 
@@ -18,12 +16,10 @@ user_age = int(user_age)
 user_income = input('Your income per month (UAH) >>> ')
 
 # data processing - income
-if not user_income.replace(".", "1").isdigit() or user_income.count(".") > 1:
+while not user_income.replace('.', '1').isdigit() or user_income.count('.') > 1:
 
-    while not user_income.replace('.', '1').isdigit() or user_income.count('.') > 1:
-
-        user_income = input('Please use integer or decimal \n'
-                            'without other symbols, so, what is your income? >>> ')
+    user_income = input('Please use integer or decimal \n'
+                        'without other symbols, so, what is your income? >>> ')
 
 user_income = float(user_income)
 
