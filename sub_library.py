@@ -1,3 +1,15 @@
+def is_double_number(number: int | float) -> bool:
+    """check if number is a pair"""
+
+    if number % 2 == 0:
+
+        return True
+
+    else:
+
+        return False
+
+
 def convert_input_in_float(text_message: str) -> float:
     """Asks a question to the user
     and converts the answer into numeric data"""

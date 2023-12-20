@@ -13,18 +13,6 @@ def convert_cm_in_inches(cm_data: int | float) -> float:
     return inch_result
 
 
-def is_double_number(number: int | float) -> bool:
-    """check if number is a pair"""
-
-    if number % 2 == 0:
-
-        return True
-
-    else:
-
-        return False
-
-
 def choose_pair_numbers_in_list(some_list: list) -> list:
     """Selects paired numbers from a list
     and returns them as a list"""
@@ -33,7 +21,7 @@ def choose_pair_numbers_in_list(some_list: list) -> list:
 
     for element in some_list:
 
-        if is_double_number(element):
+        if sub_library.is_double_number(element):
 
             list_of_double_numbers.append(element)
 
@@ -58,5 +46,4 @@ enter installment period (in years)")
     else:
 
         return False
-
 
