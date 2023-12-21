@@ -7,7 +7,7 @@ def convert_cm_in_inches(cm_data: int | float) -> float:
     converts in inches and rounds to 2 chars after coma;
     returns inches"""
 
-    inch_data = cm_data * 2.54
+    inch_data = cm_data / 2.54
     inch_result = round(inch_data, 2)
 
     return inch_result
